@@ -43,6 +43,4 @@
 *.user
 *.recipe
 *.ilk
-*.filters
-*.vcxproj
 *.vs
