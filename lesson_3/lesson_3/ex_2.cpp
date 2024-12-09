@@ -4,7 +4,7 @@
 
 static void ex_2()
 {
-	int a, b, c, sum, mult, arith_mean;
+	double a, b, c, sum, mult, arith_mean;
 	const int AMOUNT_NUM = 3;
 
 	std::cout << "Please, enter 3 numbers." << std::endl;
@@ -17,7 +17,7 @@ static void ex_2()
 
 	sum = a + b + c;
 	mult = a * b * c;
-	arith_mean = sum / AMOUNT_NUM;
+	arith_mean = sum / static_cast<double>(AMOUNT_NUM);
 
 	std::cout << "The sum of your numbers:" << " " << sum << std::endl;
 	std::cout << "Multiplication of your numbers:" << " " << mult << std::endl;
