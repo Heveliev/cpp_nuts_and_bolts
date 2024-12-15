@@ -14,7 +14,7 @@ static void ex_2()
 	std::cout << "c =" << " ";
 	std::cin >> c;
 
-	if (!(c % a) && !(c % b))
+	if ((c % a == 0) && (c % b == 0))
 	{
 		std::cout << "Yes!";
 	}

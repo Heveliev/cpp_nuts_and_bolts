@@ -21,7 +21,7 @@ static void ex_1()
 	{
 		std::cout << "The greatest number a =" << " " << a << std::endl;
 	}
-	else if (b >= a && b >= c)
+	else if (b >= c)
 	{
 		std::cout << "The greatest number b =" << " " << b << std::endl;
 	}

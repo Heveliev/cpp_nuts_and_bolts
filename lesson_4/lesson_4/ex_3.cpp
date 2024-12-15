@@ -31,7 +31,7 @@ static void ex_3()
 	is_valid_y = angle_validation(y);
 
 	sum = a + b + y;
-	is_valid_sum = static_cast<bool>(sum == required_sum);
+	is_valid_sum = sum == required_sum;
 
 	if (is_valid_a && is_valid_b && is_valid_y && is_valid_sum) {
 		std::cout << "You can build a triangle from your corners!";
@@ -48,7 +48,7 @@ bool angle_validation(int corner)
 {
 	const int min = 0, max = 180;
 
-	bool val = static_cast<bool>(corner > min && corner < max);
+	bool val = corner > min && corner < max;
 
 	return val;
 }
