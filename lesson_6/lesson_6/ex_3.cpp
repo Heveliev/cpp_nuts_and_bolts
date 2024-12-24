@@ -49,12 +49,7 @@ static void ex_3()
 			continue;
 		}
 
-		if (!is_lower_letter && !is_number && !is_special_symbol)
-		{
-			std::cout << "Sorry, we don't know such symbols....:(" << std::endl;
-			continue;
-		}
-
+		std::cout << "Sorry, we don't know such symbols....:(" << std::endl;
 	}
 
 }

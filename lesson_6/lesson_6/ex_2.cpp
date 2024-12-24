@@ -3,16 +3,10 @@
 #include <iostream>
 
 
-static void print_symbol(char);
-
-static void end_line();
-
 static void ex_2()
 {
 	const char SYMBOL_STAR = '*';
 	const char SYMBOL_SPACE = ' ';
-	const char SYMBOL_ZERO = '0';
-	const char SYMBOL_ONE = '1';
 
 	int width = 0, height = 0;
 
@@ -41,10 +35,10 @@ static void ex_2()
 		{
 			for(int j = 0; j < i; j++)
 			{ 
-				print_symbol(SYMBOL_STAR);
+				std::cout << SYMBOL_STAR;
 			}
 
-			end_line();
+			std::cout << std::endl;
 		}
 
 		std::cout << std::endl;
@@ -53,10 +47,10 @@ static void ex_2()
 		{
 			for (int j = 0; j < i; j++)
 			{
-				print_symbol(SYMBOL_STAR);
+				std::cout << SYMBOL_STAR;
 			}
 
-			end_line();
+			std::cout << std::endl;
 		}
 
 		std::cout << std::endl;
@@ -65,10 +59,10 @@ static void ex_2()
 		{
 			for (int j = 0; j < width; j++)
 			{
-				print_symbol(SYMBOL_STAR);
+				std::cout << SYMBOL_STAR;
 			}
 
-			end_line();
+			std::cout << std::endl;
 		}
 
 		std::cout << std::endl;
@@ -78,16 +72,16 @@ static void ex_2()
 
 			for (int k = 0; k < i; k++)
 			{
-				print_symbol(SYMBOL_SPACE);
+				std::cout << SYMBOL_SPACE;
 			}
 
 
 			for (int j = 0; j < width; j++)
 			{
-				print_symbol(SYMBOL_STAR);
+				std::cout << SYMBOL_STAR;
 			}
 
-			end_line();
+			std::cout << std::endl;
 		}
 
 		std::cout << std::endl;
@@ -96,22 +90,11 @@ static void ex_2()
 		{
 			for (int j = 0; j < i; j++)
 			{
-				(j % 2) ? print_symbol(SYMBOL_ZERO) : print_symbol(SYMBOL_ONE);
+				std::cout << ((i + j) % 2);
 			}
 
-			end_line();
+			std::cout << std::endl;
 		}
 	}
 
-}
-
-
-static void print_symbol(char symbol)
-{
-	std::cout << symbol;
-}
-
-static void end_line() 
-{
-	std::cout << std::endl;
 }
