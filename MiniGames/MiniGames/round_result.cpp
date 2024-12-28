@@ -1,41 +1,38 @@
 // round_result.cpp -- program for determining the winner
 
+#include "GameConfig.h"
 
-int get_choice_from_symbol(char);
+#include "round_result.h"
 
-
-static char round_result(char user_choice, int pc_choice)
+int convert_symbol(char choice)
 {
-	int const number_values = 3;
+	switch (choice)
+	{
+	case GameConfig::ROCK_SYMBOL:
+		return GameConfig::ROCK;
+	case GameConfig::PAPER_SYMBOL:
+		return GameConfig::PAPER;
+	case GameConfig::SCISSORS_SYMBOL:
+		return GameConfig::SCISSORS;
+	default:
+		return 0;
+	}
+}
 
-	int user = -1;
 
-	user = get_choice_from_symbol(user_choice);
+char round_result(char user_choice, int pc_choice)
+{
+	int user = 0;
+
+	user = convert_symbol(user_choice);
 
 	if (user == pc_choice)
 	{
-		return 'd';
+		return GameConfig::DRAW_SYMBOL;
 	}
 
-	return (user - pc_choice + number_values) % number_values == 1 ? 'w' : 'l';
+	return (user - pc_choice + GameConfig::NUMBER_VALUES) % GameConfig::NUMBER_VALUES == 1 ? GameConfig::WIN_SYMBOL : GameConfig::LOSS_SYMBOL;
 }
 
 
 
-int get_choice_from_symbol(char choice)
-{
-	const char ROCK_SYMBOL = 'r', PAPER_SYMBOL = 'p', SCISSORS_SYMBOL = 's';
-	const char ROCK = 0, PAPER = 1, SCISSORS = 2;
-
-	switch (choice)
-	{
-	case ROCK_SYMBOL:
-		return ROCK;
-	case PAPER_SYMBOL:
-		return PAPER;
-	case SCISSORS_SYMBOL:
-		return SCISSORS;
-	default:
-		return -1;
-	}
-}

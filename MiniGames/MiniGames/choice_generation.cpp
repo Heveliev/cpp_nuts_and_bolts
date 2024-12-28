@@ -2,27 +2,25 @@
 
 #include <cstdlib>
 
+#include "GameConfig.h"
 
-static int choice_generation()
+#include "choice_generation.h"
+
+int choice_generation()
 {
-	const int NUMBER_VALUES = 3;
-
-	return rand() % NUMBER_VALUES;
+	return rand() % GameConfig::NUMBER_VALUES;
 }
 
-static char get_choice_from_number(int pc_choice)
+char convert_number(int pc_choice)
 {
-	const char ROCK_SYMBOL = 'r', PAPER_SYMBOL = 'p', SCISSORS_SYMBOL = 's';
-	const char ROCK = 0, PAPER = 1, SCISSORS = 2;
-
 	switch (pc_choice)
 	{
-	case ROCK: 
-		return ROCK_SYMBOL;
-	case PAPER: 
-		return PAPER_SYMBOL;
-	case SCISSORS: 
-		return SCISSORS_SYMBOL;
+	case GameConfig::ROCK:
+		return GameConfig::ROCK_SYMBOL;
+	case GameConfig::PAPER:
+		return GameConfig::PAPER_SYMBOL;
+	case GameConfig::SCISSORS:
+		return GameConfig::SCISSORS_SYMBOL;
 	default: 
 		return '0';
 	}

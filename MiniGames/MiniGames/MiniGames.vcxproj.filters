@@ -18,5 +18,11 @@
     <ClCompile Include="MiniGames.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="choice_generation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="round_result.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
