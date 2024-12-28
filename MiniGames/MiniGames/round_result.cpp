@@ -2,8 +2,6 @@
 
 #include "GameConfig.h"
 
-#include "round_result.h"
-
 int convert_symbol(char choice)
 {
 	switch (choice)

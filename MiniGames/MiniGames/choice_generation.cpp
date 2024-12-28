@@ -4,8 +4,6 @@
 
 #include "GameConfig.h"
 
-#include "choice_generation.h"
-
 int choice_generation()
 {
 	return rand() % GameConfig::NUMBER_VALUES;
