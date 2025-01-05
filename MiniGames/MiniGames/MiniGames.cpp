@@ -94,7 +94,7 @@ int main()
 		std::cout << std::setw(GameConfig::NUMBER_SPACES);
 		std::cout << "number of draws -" << " " << draws << std::endl;
 
-		std::cout << "---";
+		std::cout << "----";
 		if (wins > losses)
 		{
 			std::cout << "You are smarter than my PC, congratulations!";
@@ -107,7 +107,7 @@ int main()
 		{
 			std::cout << "The friendship between you and the computer has won!";
 		}
-		std::cout << "---" << std::endl;
+		std::cout << "----" << std::endl;
 
 
 
