@@ -28,6 +28,69 @@
     <Filter Include="Source Files\ex_5">
       <UniqueIdentifier>{db206d29-8a36-4f14-b17b-d4b9aa503ce2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ex_1\translate_array">
+      <UniqueIdentifier>{1a2a42dd-ac6b-4b8c-a6f3-d16297890de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_1">
+      <UniqueIdentifier>{ff2273be-7c65-46ee-9b32-e8d09772bc6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_1\translate_array">
+      <UniqueIdentifier>{a67d193d-73f1-4210-9370-bb6ce275bba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_1\translate_array\validation_number">
+      <UniqueIdentifier>{16289554-9491-44f9-9fc6-6a2413727b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_1\translate_array\validation_number">
+      <UniqueIdentifier>{7a213a90-f571-4c60-b108-2c4222c577fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_2\to_uppercase">
+      <UniqueIdentifier>{f0870f26-ac16-4ff4-8aad-64c87e8dab65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_2">
+      <UniqueIdentifier>{ceece5df-d212-483c-959c-35fe232efa59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_2\to_uppercase">
+      <UniqueIdentifier>{d70f8484-8513-4811-9c6b-dd62b571d3b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_3\is_palindrom">
+      <UniqueIdentifier>{0d945df2-5c4e-426f-a6c8-63be237073c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_3">
+      <UniqueIdentifier>{b7e4bf88-3e30-4bb2-8061-22d52130e267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_3\is_palindrom">
+      <UniqueIdentifier>{253be459-78c8-4968-9622-e52e606db017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_4\parse_string_letters">
+      <UniqueIdentifier>{d428301e-aea4-4d37-9415-c726c62e186d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_4">
+      <UniqueIdentifier>{6bf642c4-331d-40d3-b3a3-7d1b6b15441a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_4\parse_string_letters">
+      <UniqueIdentifier>{6549fcc2-3e2b-47dd-b038-b9ca5fe751a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helpers">
+      <UniqueIdentifier>{c0545a81-ed42-4cc8-b18f-e4eed0a0b224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\helpers">
+      <UniqueIdentifier>{3cf8a7ca-a715-4a9a-aede-f3618d4ff510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helpers\array_length">
+      <UniqueIdentifier>{b198b654-08ef-4015-9d88-5db703917d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helpers\is_vowel">
+      <UniqueIdentifier>{06c0a585-b7e0-49fe-8b2a-56e4c95e6ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_5">
+      <UniqueIdentifier>{3267e552-294b-4153-bcbd-2f4be1107b8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_5\is_equal">
+      <UniqueIdentifier>{f8408b8e-5ada-482d-858b-8fe783a3b5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_5\is_equal">
+      <UniqueIdentifier>{962a6505-e932-43a8-a0bc-0d074f212220}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lesson_9.cpp">
@@ -48,6 +111,30 @@
     <ClCompile Include="ex_5\ex_5.cpp">
       <Filter>Source Files\ex_5</Filter>
     </ClCompile>
+    <ClCompile Include="ex_1\translate_array\translate_array.cpp">
+      <Filter>Source Files\ex_1\translate_array</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_1\translate_array\validation_number\validation_number.cpp">
+      <Filter>Source Files\ex_1\translate_array\validation_number</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_2\to_uppercase\to_uppercase.cpp">
+      <Filter>Source Files\ex_2\to_uppercase</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_3\is_palindrom\is_palindrom.cpp">
+      <Filter>Source Files\ex_3\is_palindrom</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_4\parse_string_letters\parse_string_letters.cpp">
+      <Filter>Source Files\ex_4\parse_string_letters</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\array_length\array_length.cpp">
+      <Filter>Source Files\helpers\array_length</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\is_vowel\is_vowel.cpp">
+      <Filter>Source Files\helpers\is_vowel</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_5\is_equal\is_equal.cpp">
+      <Filter>Source Files\ex_5\is_equal</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h">
@@ -55,6 +142,42 @@
     </ClInclude>
     <ClInclude Include="ex.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_1\translate_array\translate_array.h">
+      <Filter>Header Files\ex_1\translate_array</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_1\translate_array\validation_number\validation_number.h">
+      <Filter>Header Files\ex_1\translate_array\validation_number</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_2\to_uppercase\to_uppercase.h">
+      <Filter>Header Files\ex_2\to_uppercase</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_1\ConfigEx_1.h">
+      <Filter>Header Files\ex_1</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_2\ConfigEx_2.h">
+      <Filter>Header Files\ex_2</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_3\is_palindrom\is_palindrom.h">
+      <Filter>Header Files\ex_3\is_palindrom</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_3\ConfigEx_3.h">
+      <Filter>Header Files\ex_3</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_4\parse_string_letters\parse_string_letters.h">
+      <Filter>Header Files\ex_4\parse_string_letters</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_4\ConfigEx_4.h">
+      <Filter>Header Files\ex_4</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\helpers.h">
+      <Filter>Header Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_5\ConfigEx_5.h">
+      <Filter>Header Files\ex_5</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_5\is_equal\is_equal.h">
+      <Filter>Header Files\ex_5\is_equal</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
