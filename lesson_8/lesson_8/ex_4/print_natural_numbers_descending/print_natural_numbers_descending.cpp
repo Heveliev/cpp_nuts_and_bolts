@@ -1,4 +1,4 @@
-// print_natural_numbers_descending -- function to print N natural numbers from largest to smallest using a loop
+// print_natural_numbers_descending.cpp -- function to print N natural numbers from largest to smallest using a loop
 
 #include <iostream>
 

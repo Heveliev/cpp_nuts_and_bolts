@@ -1,4 +1,4 @@
-// factorial_using_recursion_reverse -- a function that calculates the value of the factorial from smallest to largest using recursion
+// factorial_using_recursion_reverse.cpp -- a function that calculates the value of the factorial from smallest to largest using recursion
 
 int factorial_using_recursion_reverse(int count, int current)
 {	

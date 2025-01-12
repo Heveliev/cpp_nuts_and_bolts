@@ -1,4 +1,4 @@
-// counting_numbers -- function for validating and processing the sign of a number
+// counting_numbers.cpp -- function for validating and processing the sign of a number
 
 #include <iostream>
 

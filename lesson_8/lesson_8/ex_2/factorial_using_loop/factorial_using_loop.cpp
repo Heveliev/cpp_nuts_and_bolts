@@ -1,4 +1,4 @@
-// factorial_using_loop -- a function that calculates the value of the factorial using a loop
+// factorial_using_loop.cpp -- a function that calculates the value of the factorial using a loop
 
 int factorial_using_loop(int count)
 {

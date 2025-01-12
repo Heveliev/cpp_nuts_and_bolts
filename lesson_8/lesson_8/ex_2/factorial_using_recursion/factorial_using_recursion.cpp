@@ -1,4 +1,4 @@
-// factorial_using_recursion -- a function that calculates the value of the factorial using recursion
+// factorial_using_recursion.cpp -- a function that calculates the value of the factorial using recursion
 
 int factorial_using_recursion(int count)
 {
