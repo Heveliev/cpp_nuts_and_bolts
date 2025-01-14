@@ -128,13 +128,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ex_1\ex_1.cpp" />
+    <ClCompile Include="ex_1\swap\swap.cpp" />
     <ClCompile Include="ex_2\ex_2.cpp" />
+    <ClCompile Include="ex_2\find\find.cpp" />
+    <ClCompile Include="ex_3\calculate_sum\calculate_sum.cpp" />
     <ClCompile Include="ex_3\ex_3.cpp" />
     <ClCompile Include="lesson_10.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
     <ClInclude Include="ex.h" />
+    <ClInclude Include="ex_1\swap\swap.h" />
+    <ClInclude Include="ex_2\ConfigEx_2.h" />
+    <ClInclude Include="ex_2\find\find.h" />
+    <ClInclude Include="ex_3\calculate_sum\calculate_sum.h" />
+    <ClInclude Include="ex_3\ConfigEx_3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

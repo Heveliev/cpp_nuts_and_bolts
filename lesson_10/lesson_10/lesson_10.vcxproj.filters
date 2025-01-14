@@ -22,6 +22,33 @@
     <Filter Include="Source Files\ex_3">
       <UniqueIdentifier>{01e911ce-2e09-4d0b-b158-7a9c8c77bfad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ex_1\swap">
+      <UniqueIdentifier>{285576a1-16e1-4057-8da6-4c8f05a07733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_1">
+      <UniqueIdentifier>{98f99b18-df8c-4318-9fe4-a0e2ec9985dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_1\swap">
+      <UniqueIdentifier>{63eb953e-a467-43fa-9b1a-2c3014cd29d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_2\find">
+      <UniqueIdentifier>{08725eaf-d83e-4877-83e7-dee8455084b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_2">
+      <UniqueIdentifier>{29f23c52-0aa9-4bd6-8226-4f98b4b28684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_2\find">
+      <UniqueIdentifier>{0cd0d481-df41-4143-9bb6-48ea5f6b5d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_3\calculate_sum">
+      <UniqueIdentifier>{fab9b5af-1653-4619-860f-00f2a20050d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_3">
+      <UniqueIdentifier>{a70c632d-847c-4b34-97d4-d457fd1cc4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_3\calculate_sum">
+      <UniqueIdentifier>{e6dcf35d-e3bb-455b-bcf9-68c4232c96b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lesson_10.cpp">
@@ -36,6 +63,15 @@
     <ClCompile Include="ex_2\ex_2.cpp">
       <Filter>Source Files\ex_2</Filter>
     </ClCompile>
+    <ClCompile Include="ex_1\swap\swap.cpp">
+      <Filter>Source Files\ex_1\swap</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_2\find\find.cpp">
+      <Filter>Source Files\ex_2\find</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_3\calculate_sum\calculate_sum.cpp">
+      <Filter>Source Files\ex_3\calculate_sum</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h">
@@ -43,6 +79,21 @@
     </ClInclude>
     <ClInclude Include="ex.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_1\swap\swap.h">
+      <Filter>Header Files\ex_1\swap</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_2\find\find.h">
+      <Filter>Header Files\ex_2\find</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_2\ConfigEx_2.h">
+      <Filter>Header Files\ex_2</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_3\ConfigEx_3.h">
+      <Filter>Header Files\ex_3</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_3\calculate_sum\calculate_sum.h">
+      <Filter>Header Files\ex_3\calculate_sum</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
