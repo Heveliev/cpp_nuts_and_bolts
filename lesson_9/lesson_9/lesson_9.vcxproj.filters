@@ -76,9 +76,6 @@
     <Filter Include="Header Files\helpers">
       <UniqueIdentifier>{3cf8a7ca-a715-4a9a-aede-f3618d4ff510}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\helpers\array_length">
-      <UniqueIdentifier>{b198b654-08ef-4015-9d88-5db703917d06}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\helpers\is_vowel">
       <UniqueIdentifier>{06c0a585-b7e0-49fe-8b2a-56e4c95e6ef2}</UniqueIdentifier>
     </Filter>
@@ -90,6 +87,9 @@
     </Filter>
     <Filter Include="Header Files\ex_5\is_equal">
       <UniqueIdentifier>{962a6505-e932-43a8-a0bc-0d074f212220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helpers\string_length">
+      <UniqueIdentifier>{b198b654-08ef-4015-9d88-5db703917d06}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -126,14 +126,14 @@
     <ClCompile Include="ex_4\parse_string_letters\parse_string_letters.cpp">
       <Filter>Source Files\ex_4\parse_string_letters</Filter>
     </ClCompile>
-    <ClCompile Include="helpers\array_length\array_length.cpp">
-      <Filter>Source Files\helpers\array_length</Filter>
-    </ClCompile>
     <ClCompile Include="helpers\is_vowel\is_vowel.cpp">
       <Filter>Source Files\helpers\is_vowel</Filter>
     </ClCompile>
     <ClCompile Include="ex_5\is_equal\is_equal.cpp">
       <Filter>Source Files\ex_5\is_equal</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\string_length\string_length.cpp">
+      <Filter>Source Files\helpers\string_length</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

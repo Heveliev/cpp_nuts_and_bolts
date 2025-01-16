@@ -138,8 +138,8 @@
     <ClCompile Include="ex_4\parse_string_letters\parse_string_letters.cpp" />
     <ClCompile Include="ex_5\ex_5.cpp" />
     <ClCompile Include="ex_5\is_equal\is_equal.cpp" />
-    <ClCompile Include="helpers\array_length\array_length.cpp" />
     <ClCompile Include="helpers\is_vowel\is_vowel.cpp" />
+    <ClCompile Include="helpers\string_length\string_length.cpp" />
     <ClCompile Include="lesson_9.cpp" />
   </ItemGroup>
   <ItemGroup>
