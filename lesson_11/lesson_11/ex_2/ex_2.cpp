@@ -1,8 +1,10 @@
-// ex_2.cpp -- 
+// ex_2.cpp -- program to check if an array is sorted in ascending order
 
 #include <iostream>
 
 #include "../Config.h"
+
+#include "is_sorted/is_sorted.h"
 
 void ex_2()
 {
@@ -30,6 +32,27 @@ void ex_2()
 			std::cout << "Try again!" << std::endl;
 			continue;
 		}
+
+		std::cout << "Unsorted arrays:" << std::endl;
+		for (int i = 0; i < (Config::SIZE / 2); i++)
+		{
+			std::cout << (i + 1) << " " << "array:" << std::endl;
+			std::cout << "Array" << " ";
+			std::cout << (is_sorted(Config::unsorted_arrays[i], Config::SIZE) ? "sorted" : "not sorted");
+			std::cout << " " << "in ascending order." << std::endl;
+		}
+		std::cout << std::endl;
+
+
+		std::cout << "Sorted arrays:" << std::endl;
+		for (int i = 0; i < (Config::SIZE / 2); i++)
+		{
+			std::cout << (i + 1) << " " << "array:" << std::endl;
+			std::cout << "Array" << " ";
+			std::cout << (is_sorted(Config::sorted_array[i * 2], Config::SIZE) ? "sorted" : "not sorted");
+			std::cout << " " << "in ascending order." << std::endl;
+		}
+		std::cout << std::endl;
 
 		std::cout << std::endl << std::endl;
 	}
