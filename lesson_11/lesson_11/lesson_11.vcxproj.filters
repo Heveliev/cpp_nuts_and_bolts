@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ex_1">
+      <UniqueIdentifier>{21f25f12-330a-444d-b0f1-2729ce2f4095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_2">
+      <UniqueIdentifier>{7d34bbc7-a681-4fe0-a918-b8490b379234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_3">
+      <UniqueIdentifier>{32f712e9-54ac-4dbb-a461-3ace168b7adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_4">
+      <UniqueIdentifier>{cc77fc43-08be-4ea6-833e-094d5154d7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_5">
+      <UniqueIdentifier>{6b3ce7b1-5ee9-4ad4-8de8-45ae98f412ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_1">
+      <UniqueIdentifier>{27cf6097-da5d-412a-9944-8d2ce362d5c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_2">
+      <UniqueIdentifier>{9d437992-4a02-472b-9a5b-d36192253697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_3">
+      <UniqueIdentifier>{9c27f70d-4e94-4596-8abc-92d9af22f1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_4">
+      <UniqueIdentifier>{8d8cf527-cbc0-42c3-aa3f-3fe15d4ec8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_5">
+      <UniqueIdentifier>{e221a7c0-7b47-4a44-ae39-45f409805a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ex_3_description">
+      <UniqueIdentifier>{b80b30de-5ee0-41c2-9a43-01dea9318352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ex_4_description">
+      <UniqueIdentifier>{ec4c4e7f-38ee-46a2-98fc-6235e4e4a478}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lesson_11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_1\ex_1.cpp">
+      <Filter>Source Files\ex_1</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_2\ex_2.cpp">
+      <Filter>Source Files\ex_2</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_3\ex_3.cpp">
+      <Filter>Source Files\ex_3</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_4\ex_4.cpp">
+      <Filter>Source Files\ex_4</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_5\ex_5.cpp">
+      <Filter>Source Files\ex_5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ex_3\ex_3_description\ex_3.png">
+      <Filter>Resource Files\ex_3_description</Filter>
+    </Image>
+    <Image Include="ex_3\ex_3_description\ex_3_description.png">
+      <Filter>Resource Files\ex_3_description</Filter>
+    </Image>
+    <Image Include="ex_4\ex_4_description\ex_4.png">
+      <Filter>Resource Files\ex_4_description</Filter>
+    </Image>
+    <Image Include="ex_4\ex_4_description\ex_4_description.png">
+      <Filter>Resource Files\ex_4_description</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex_3\ex_3_description\ex_3_description.md">
+      <Filter>Resource Files\ex_3_description</Filter>
+    </None>
+    <None Include="ex_4\ex_4_description\ex_4_description.md">
+      <Filter>Resource Files\ex_4_description</Filter>
+    </None>
+  </ItemGroup>
+</Project>
