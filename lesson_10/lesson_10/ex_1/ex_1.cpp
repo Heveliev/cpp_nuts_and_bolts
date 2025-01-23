@@ -1,8 +1,10 @@
-// ex_1.cpp -- 
+// ex_1.cpp -- program to swap two values using a pointer and using a reference
 
 #include <iostream>
 
 #include "../Config.h"
+
+#include "swap/swap.h"
 
 void ex_1()
 {
@@ -30,6 +32,38 @@ void ex_1()
 			std::cout << "Try again!" << std::endl;
 			continue;
 		}
+
+
+
+		int x = 0;
+		int y = 0;
+
+		std::cout << "Please enter 2 numbers:" << std::endl;
+
+		std::cout << "x =" << " ";
+		std::cin >> x;
+
+		std::cout << "y =" << " ";
+		std::cin >> y;
+
+		std::cout << "Using a pointer:" << std::endl;
+		ptr::swap(&x, &y);
+		std::cout << "Result:" << std::endl;
+		std::cout << "x =" << " " << x << std::endl;
+		std::cout << "y =" << " " << y << std::endl;
+
+		std::cout << std::endl << std::endl;
+
+
+		std::cout << "Using links:" << std::endl;
+		link::swap(x, y);
+		std::cout << "Result:" << std::endl;
+		std::cout << "x =" << " " << x << std::endl;
+		std::cout << "y =" << " " << y << std::endl;
+
+		std::cout << std::endl << std::endl;
+
+
 
 		std::cout << std::endl << std::endl;
 	}
