@@ -128,15 +128,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ex_1\ex_1.cpp" />
+    <ClCompile Include="ex_1\translate_array\translate_array.cpp" />
+    <ClCompile Include="ex_1\translate_array\validation_number\validation_number.cpp" />
     <ClCompile Include="ex_2\ex_2.cpp" />
+    <ClCompile Include="ex_2\to_uppercase\to_uppercase.cpp" />
     <ClCompile Include="ex_3\ex_3.cpp" />
+    <ClCompile Include="ex_3\is_palindrom\is_palindrom.cpp" />
     <ClCompile Include="ex_4\ex_4.cpp" />
+    <ClCompile Include="ex_4\parse_string_letters\parse_string_letters.cpp" />
     <ClCompile Include="ex_5\ex_5.cpp" />
+    <ClCompile Include="ex_5\is_equal\is_equal.cpp" />
+    <ClCompile Include="helpers\is_vowel\is_vowel.cpp" />
+    <ClCompile Include="helpers\string_length\string_length.cpp" />
     <ClCompile Include="lesson_9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
     <ClInclude Include="ex.h" />
+    <ClInclude Include="ex_1\ConfigEx_1.h" />
+    <ClInclude Include="ex_1\translate_array\translate_array.h" />
+    <ClInclude Include="ex_1\translate_array\validation_number\validation_number.h" />
+    <ClInclude Include="ex_2\ConfigEx_2.h" />
+    <ClInclude Include="ex_2\to_uppercase\to_uppercase.h" />
+    <ClInclude Include="ex_3\ConfigEx_3.h" />
+    <ClInclude Include="ex_3\is_palindrom\is_palindrom.h" />
+    <ClInclude Include="ex_4\ConfigEx_4.h" />
+    <ClInclude Include="ex_4\parse_string_letters\parse_string_letters.h" />
+    <ClInclude Include="ex_5\ConfigEx_5.h" />
+    <ClInclude Include="ex_5\is_equal\is_equal.h" />
+    <ClInclude Include="helpers\helpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
