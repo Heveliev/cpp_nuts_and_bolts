@@ -55,7 +55,7 @@ public:
 
 namespace Sort
 {
-    static constexpr enum class SortingDirection
+    enum class SortingDirection
     {
         ascending,
         descending
@@ -64,7 +64,7 @@ namespace Sort
 
 namespace Table
 {
-    static constexpr enum class SortingDirection
+    enum class SortingDirection
     {
         by_rows,
         by_column

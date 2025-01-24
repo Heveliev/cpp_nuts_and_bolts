@@ -19,6 +19,33 @@
     <Filter Include="Source Files\ex_2">
       <UniqueIdentifier>{86449cf9-a441-4f57-82ab-ba2bf838c40c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\algorithms">
+      <UniqueIdentifier>{a81ecd5d-f6f8-4d06-8661-f1ce265fd74b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithms">
+      <UniqueIdentifier>{8af3379c-f85e-49e9-85f1-809411152679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithms\bubble_sort">
+      <UniqueIdentifier>{5ae9d8f6-c450-4a10-bca0-58c87f0e3cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithms\swap">
+      <UniqueIdentifier>{322a200c-9e0e-4aa6-9ef5-37ca852848a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithms\selection_sort">
+      <UniqueIdentifier>{55f2a456-e857-45cb-a496-b7a8474872a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithms\quick_sort">
+      <UniqueIdentifier>{01bce4d7-b55d-40b8-999d-2d11cbf3eaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_2">
+      <UniqueIdentifier>{ca5bedd0-4394-47f0-8e51-b0918ed81b61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ex_2\sort">
+      <UniqueIdentifier>{474119d8-fa2e-430b-a63e-9e479f8b4956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ex_2\sort">
+      <UniqueIdentifier>{a52bf355-fdd2-4fd8-86b1-d84634e38edb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lesson_12.cpp">
@@ -30,6 +57,21 @@
     <ClCompile Include="ex_2\ex_2.cpp">
       <Filter>Source Files\ex_2</Filter>
     </ClCompile>
+    <ClCompile Include="algorithms\swap\swap.cpp">
+      <Filter>Source Files\algorithms\swap</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\bubble_sort\bubble_sort.cpp">
+      <Filter>Source Files\algorithms\bubble_sort</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\selection_sort\selection_sort.cpp">
+      <Filter>Source Files\algorithms\selection_sort</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithms\quick_sort\quick_sort.cpp">
+      <Filter>Source Files\algorithms\quick_sort</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_2\sort\sort.cpp">
+      <Filter>Source Files\ex_2\sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h">
@@ -37,6 +79,12 @@
     </ClInclude>
     <ClInclude Include="ex.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\algorithms.h">
+      <Filter>Header Files\algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="ex_2\sort\sort.h">
+      <Filter>Header Files\ex_2\sort</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

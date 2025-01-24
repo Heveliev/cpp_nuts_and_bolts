@@ -4,6 +4,8 @@
 
 #include "../Config.h"
 
+#include "sort/sort.h"
+
 
 void ex_2()
 {
@@ -32,6 +34,102 @@ void ex_2()
 			continue;
 		}
 
+
+
+		int arr[Config::ROWS][Config::COLUMNS];
+
+		for (int i = 0; i < Config::ROWS; i++) {
+			std::copy(Config::unsorted_arrays[i],
+				Config::unsorted_arrays[i] + Config::COLUMNS,
+				arr[i]);
+		}
+
+		std::cout << "Check for increase(by rows):" << std::endl;
+		std::cout << "Unsort:" << std::endl;
+		for (int i = 0; i < Config::SIZE; i++)
+		{
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[i][j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
+
+		sort(arr);
+
+		std::cout << "Sort:" << std::endl;
+		for (int i = 0; i < Config::SIZE; i++)
+		{
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[i][j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
+
+		sort(arr, Table::SortingDirection::by_rows, Sort::SortingDirection::descending);
+
+		std::cout << "Check for decreasing(by rows):" << std::endl;
+		std::cout << "Sort:" << std::endl;
+		for (int i = 0; i < Config::SIZE; i++)
+		{
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[i][j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
+
+
+
+		for (int i = 0; i < Config::ROWS; i++) {
+			std::copy(Config::unsorted_arrays[i],
+				Config::unsorted_arrays[i] + Config::COLUMNS,
+				arr[i]);
+		}
+
+
+		std::cout << "Check for increase(by columns):" << std::endl;
+		std::cout << "Unsort:" << std::endl;
+		for (int i = 0; i < Config::SIZE; i++)
+		{
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[i][j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
+
+		sort(arr, Table::SortingDirection::by_column);
+
+		std::cout << "Sort:" << std::endl;
+		for (int i = 0; i < Config::SIZE; i++)
+		{
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[i][j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
+
+		sort(arr, Table::SortingDirection::by_column, Sort::SortingDirection::descending);
+
+		std::cout << "Check for decreasing(by column):" << std::endl;
+		std::cout << "Sort:" << std::endl;
+		for (int i = 0; i < Config::SIZE; i++)
+		{
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[i][j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
 
 		std::cout << std::endl << std::endl;
 	}
