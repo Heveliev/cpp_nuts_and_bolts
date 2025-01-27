@@ -7,14 +7,17 @@
 
 void traverse_array_ex4(const int arr_2d[Config::SMALL_ROWS][Config::SMALL_COLUMNS])
 {
-	int counter = 0;
+
 	for (int i = (Config::SMALL_ROWS - 1); i >= 0; i--)
 	{
-		for (int j = 0; j < Config::SMALL_COLUMNS; j++)
+		int initialValue = (i % 2 == 0) ? Config::SMALL_COLUMNS - 1 : 0;
+		int compareValue = (i % 2 == 0) ? -1 : Config::SMALL_COLUMNS;
+		int increment = (i % 2 == 0) ? -1 : 1;
+
+		for (int j = initialValue; j != compareValue; j += increment)
 		{
-			if (counter >= Config::SMALL_COLUMNS) counter--; else if (counter < 0) counter++;
-			std::cout << arr_2d[i][counter] << " ";
-			if (i % 2) counter++; else counter--;
+			std::cout << arr_2d[i][j] << " ";
+			std::cout << "counter " << j << std::endl;
 		}
 		
 		std::cout << std::endl;
@@ -24,14 +27,15 @@ void traverse_array_ex4(const int arr_2d[Config::SMALL_ROWS][Config::SMALL_COLUM
 
 void traverse_array_ex4(const int arr_2d[Config::ROWS][Config::COLUMNS])
 {
-	int counter = 0;
 	for (int i = (Config::ROWS - 1); i >= 0; i--)
 	{
-		for (int j = 0; j < Config::COLUMNS; j++)
+		int initialValue = (i % 2 == 0) ? Config::COLUMNS - 1 : 0;
+		int compareValue = (i % 2 == 0) ? -1 : Config::COLUMNS;
+		int increment = (i % 2 == 0) ? -1 : 1;
+
+		for (int j = initialValue; j != compareValue; j += increment)
 		{
-			if (counter >= Config::COLUMNS) counter--; else if (counter < 0) counter++;
-			std::cout << arr_2d[i][counter] << " ";
-			if (i % 2) counter++; else counter--;
+			std::cout << arr_2d[i][j] << " ";
 		}
 
 		std::cout << std::endl;
