@@ -23,7 +23,7 @@ int main()
     std::cout << std::endl << std::endl;
 
     std::cout << "Exercise 4\n" << std::endl;
-    ex_3();
+    ex_4();
     std::cout << std::endl << std::endl;
 
     std::cout << "Exercise 5\n" << std::endl;

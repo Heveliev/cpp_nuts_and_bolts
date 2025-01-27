@@ -1,8 +1,11 @@
-// ex_3.cpp -- 
+// ex_3.cpp -- program for enumerating elements of a two-dimensional array in a non-standard way 
+// described in the document "ex_3_description.md"
 
 #include <iostream>
 
 #include "../Config.h"
+
+#include "traverse_array_ex3/traverse_array_ex3.h"
 
 void ex_3()
 {
@@ -30,6 +33,15 @@ void ex_3()
 			std::cout << "Try again!" << std::endl;
 			continue;
 		}
+
+
+		std::cout << "Traverse small array:" << std::endl;
+		traverse_array_ex3(Config::small_2d_array);
+		std::cout << std::endl;
+
+		std::cout << "Traverse big array:" << std::endl;
+		traverse_array_ex3(Config::unsorted_arrays);
+		std::cout << std::endl;
 
 		std::cout << std::endl << std::endl;
 	}

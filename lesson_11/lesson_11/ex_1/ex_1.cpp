@@ -1,8 +1,10 @@
-// ex_1.cpp -- 
+// ex_1.cpp -- program to find a number in a two-dimensional array using linear search O(n*m)
 
 #include <iostream>
 
 #include "../Config.h"
+
+#include "./find/find.h"
 
 void ex_1()
 {
@@ -30,6 +32,40 @@ void ex_1()
 			std::cout << "Try again!" << std::endl;
 			continue;
 		}
+
+		int search = 3;
+
+
+		std::cout << "First number:" << std::endl;
+		std::cout << "The number" << " " << search << " ";
+		std::cout << (find(Config::unsorted_arrays, search) ? "is" : "is not");
+		std::cout << " " << "in the array." << std::endl;
+
+
+		search = 900;
+		std::cout << "Second number:" << std::endl;
+		std::cout << "The number" << " " << search << " ";
+		std::cout << (find(Config::unsorted_arrays, search) ? "is" : "is not");
+		std::cout << " " << "in the array." << std::endl;
+
+		search = -1;
+		std::cout << "Third number:" << std::endl;
+		std::cout << "The number" << " " << search << " ";
+		std::cout << (find(Config::unsorted_arrays, search) ? "is" : "is not");
+		std::cout << " " << "in the array." << std::endl;
+
+		search = -900;
+		std::cout << "Fourth number:" << std::endl;
+		std::cout << "The number" << " " << search << " ";
+		std::cout << (find(Config::unsorted_arrays, search) ? "is" : "is not");
+		std::cout << " " << "in the array." << std::endl;
+
+		search = 101;
+		std::cout << "Fifth number:" << std::endl;
+		std::cout << "The number" << " " << search << " ";
+		std::cout << (find(Config::unsorted_arrays, search) ? "is" : "is not");
+		std::cout << " " << "in the array." << std::endl;
+		
 
 		std::cout << std::endl << std::endl;
 	}
