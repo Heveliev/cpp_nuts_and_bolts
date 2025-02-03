@@ -127,13 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="algorithms\bubble_sort\bubble_sort.cpp" />
+    <ClCompile Include="algorithms\quick_sort\quick_sort.cpp" />
+    <ClCompile Include="algorithms\selection_sort\selection_sort.cpp" />
+    <ClCompile Include="algorithms\swap\swap.cpp" />
     <ClCompile Include="ex_1\ex_1.cpp" />
     <ClCompile Include="ex_2\ex_2.cpp" />
+    <ClCompile Include="ex_2\sort\sort.cpp" />
     <ClCompile Include="lesson_12.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="algorithms\algorithms.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="ex.h" />
+    <ClInclude Include="ex_2\sort\sort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

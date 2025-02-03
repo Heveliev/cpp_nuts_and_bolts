@@ -4,6 +4,8 @@
 
 #include "../Config.h"
 
+#include "../algorithms/algorithms.h"
+
 
 void ex_1()
 {
@@ -31,8 +33,62 @@ void ex_1()
 			std::cout << "Try again!" << std::endl;
 			continue;
 		}
+		std::cout << std::endl;
 
 
+
+		std::cout << "Check for increase:" << std::endl;
+		for (int i = 0; i < (Config::SIZE / 2); i++)
+		{
+			int arr[Config::SIZE];
+			std::copy(Config::unsorted_arrays[i], Config::unsorted_arrays[i] + Config::COLUMNS, arr);
+
+			std::cout << (i + 1) << " " << "array:" << std::endl;
+
+			std::cout << "Unsort:" << std::endl;
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+
+			algorithms::bubble_sort(arr, Config::SIZE);
+
+			std::cout << "Sort:" << std::endl;
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
+
+
+		std::cout << "Check for decreasing:" << std::endl;
+		for (int i = 0; i < (Config::SIZE / 2); i++)
+		{
+			int arr[Config::SIZE];
+			std::copy(Config::unsorted_arrays[i], Config::unsorted_arrays[i] + Config::COLUMNS, arr);
+
+			std::cout << (i + 1) << " " << "array:" << std::endl;
+
+			std::cout << "Unsort:" << std::endl;
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+
+			algorithms::bubble_sort(arr, Config::SIZE, Sort::SortingDirection::descending);
+
+			std::cout << "Sort:" << std::endl;
+			for (int j = 0; j < Config::SIZE; j++)
+			{
+				std::cout << arr[j] << " ";
+			}
+			std::cout << std::endl << std::endl;
+		}
+		std::cout << std::endl;
 
 		std::cout << std::endl << std::endl;
 	}
