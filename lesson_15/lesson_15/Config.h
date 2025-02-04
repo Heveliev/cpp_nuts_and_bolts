@@ -5,20 +5,26 @@
 class Config
 {
 public:
-    static constexpr int STUDENTs_SIZE = 20;
-    static constexpr int quantity_marks = 4;
+    static constexpr int STUDENTS_SIZE = 20;
+    static constexpr int  QUANTITY_MARKS = 4;
 
-    static constexpr int default_mark = -1;
+    static constexpr int DEFAULT_MARK = -1;
+};
 
+enum class Compare
+{
+    Ascending,
+    Descending
 };
 
 struct Student 
 {
     std::string name = "Default";
-    int marks[Config::quantity_marks] = {Config::default_mark, Config::default_mark, Config::default_mark, Config::default_mark};
+    int marks[Config::QUANTITY_MARKS] = {Config::DEFAULT_MARK, Config::DEFAULT_MARK, Config::DEFAULT_MARK, Config::DEFAULT_MARK };
+    int quantity_marks = Config::QUANTITY_MARKS;
 };
 
-Student students[Config::STUDENTs_SIZE] = 
+static const Student students[Config::STUDENTS_SIZE] = 
 {
     {"Alice", {85, 90, 78, 92}},
     {"Bob", {80, 70, 88, 91}},
