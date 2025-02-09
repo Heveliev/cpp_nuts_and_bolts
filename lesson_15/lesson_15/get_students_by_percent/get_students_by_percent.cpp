@@ -9,8 +9,9 @@ void get_students_by_percent(Student* in_students, unsigned& in_size, Student* o
     Compare compare)
 {
     Student* sorted = new Student[in_size];
+    std::copy(in_students, in_students + in_size, sorted);
 
-    compare_by_average_grade(in_students, in_size, sorted, compare);
+    compare_by_average_grade(in_size, sorted, compare);
 
     out_size = in_size * percent / 100;
 

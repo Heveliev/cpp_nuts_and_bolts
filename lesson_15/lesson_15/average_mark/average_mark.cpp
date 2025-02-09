@@ -15,8 +15,5 @@ double average_mark(const Student& student, const int& quantity_marks)
 
 	result /= quantity_marks;
 
-	result = std::round(result * 100.0) / 100.0;
-
 	return result;
-
 }
