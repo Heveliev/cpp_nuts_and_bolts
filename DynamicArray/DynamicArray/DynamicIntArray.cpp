@@ -39,8 +39,7 @@ int& DynamicIntArray::operator[](std::size_t index)
 {
 	if (index >= m_size || index < 0)
 	{
-		std::cerr << "Index out of range" << std::endl << std::endl;
-		throw;
+		throw std::out_of_range("Index out of range");
 	}
 	return m_data[index];
 }
@@ -66,14 +65,7 @@ bool DynamicIntArray::operator==(const DynamicIntArray& other)
 
 bool DynamicIntArray::operator!=(const DynamicIntArray& other)
 {
-	if (this->m_size != other.m_size) return true;
-
-	for (std::size_t i = 0; i < m_size; i++)
-	{
-		if (m_data[i] != other.m_data[i]) return true;
-
-	}
-	return false;
+	return !(*this == other);
 }
 
 std::size_t DynamicIntArray::getSize() const
@@ -97,12 +89,6 @@ DynamicIntArray& DynamicIntArray::operator=(const DynamicIntArray& other)
 
 void DynamicIntArray::setSize(std::size_t newSize)
 {
-	if (newSize <= m_size)
-	{
-		std::cerr << "Value is less than or equal to existing" << std::endl << std::endl;
-		throw;
-	}
-	
 	int* newData = new int[newSize];
 	std::copy(m_data, m_data + m_size, newData);
 	delete[] m_data;
