@@ -89,8 +89,12 @@ DynamicIntArray& DynamicIntArray::operator=(const DynamicIntArray& other)
 
 void DynamicIntArray::setSize(std::size_t newSize)
 {
+	if (newSize <= 0)
+	{
+		throw std::out_of_range("Size is less or equal 0");
+	}
 	int* newData = new int[newSize];
-	std::copy(m_data, m_data + m_size, newData);
+	std::copy(m_data, m_data + newSize, newData);
 	delete[] m_data;
 
 	m_data = newData;
