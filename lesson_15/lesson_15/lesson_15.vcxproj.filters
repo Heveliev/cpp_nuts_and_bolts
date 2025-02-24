@@ -13,15 +13,75 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\average_mark">
+      <UniqueIdentifier>{745a93a2-ec55-44c8-a71b-735111bf8410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\average_mark">
+      <UniqueIdentifier>{2aa5c262-f5e4-476a-9136-be113a7ef811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\best_student">
+      <UniqueIdentifier>{44f43628-119a-429d-a5f8-e7e914afdaa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\best_student">
+      <UniqueIdentifier>{a7385244-cb46-47d1-8494-d94589ee7613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\students_above_average">
+      <UniqueIdentifier>{57e0dcb3-dc2d-4e96-b2a7-5703f26db5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\students_above_average">
+      <UniqueIdentifier>{6eee0112-3bef-446a-ab21-4af6e7fe4c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\compare_by_average_grade">
+      <UniqueIdentifier>{bcc1d068-b65e-43db-b7b9-6d088b09a3c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compare_by_average_grade">
+      <UniqueIdentifier>{675188cc-15e8-40fe-9273-c75bbc0c5534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\get_students_by_percent">
+      <UniqueIdentifier>{d6381e61-54b1-4b53-8b49-829aec60e50c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\get_students_by_percent">
+      <UniqueIdentifier>{7460210d-4644-4c0f-8ed3-90e73fe0acae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lesson_15.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="average_mark\average_mark.cpp">
+      <Filter>Source Files\average_mark</Filter>
+    </ClCompile>
+    <ClCompile Include="best_student\best_student.cpp">
+      <Filter>Source Files\best_student</Filter>
+    </ClCompile>
+    <ClCompile Include="students_above_average\students_above_average.cpp">
+      <Filter>Source Files\students_above_average</Filter>
+    </ClCompile>
+    <ClCompile Include="compare_by_average_grade\compare_by_average_grade.cpp">
+      <Filter>Source Files\compare_by_average_grade</Filter>
+    </ClCompile>
+    <ClCompile Include="get_students_by_percent\get_students_by_percent.cpp">
+      <Filter>Source Files\get_students_by_percent</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="average_mark\average_mark.h">
+      <Filter>Header Files\average_mark</Filter>
+    </ClInclude>
+    <ClInclude Include="best_student\best_student.h">
+      <Filter>Header Files\best_student</Filter>
+    </ClInclude>
+    <ClInclude Include="students_above_average\students_above_average.h">
+      <Filter>Header Files\students_above_average</Filter>
+    </ClInclude>
+    <ClInclude Include="compare_by_average_grade\compare_by_average_grade.h">
+      <Filter>Header Files\compare_by_average_grade</Filter>
+    </ClInclude>
+    <ClInclude Include="get_students_by_percent\get_students_by_percent.h">
+      <Filter>Header Files\get_students_by_percent</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
