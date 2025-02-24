@@ -19,9 +19,9 @@ Unit::Unit(sf::RenderWindow* window)
 	m_sprite.setPosition(newPosition);
 }
 
-void Unit::update()
+void Unit::update(float deltaTime)
 {
-	constexpr float SPEED = 0.05f;
+	float SPEED = 100.0f * deltaTime;
 	
 	float deltaX = 0.0f;
 	float deltaY = 0.0f;

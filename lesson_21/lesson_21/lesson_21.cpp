@@ -8,10 +8,14 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode{ {1280, 720} }, "SFML APP");
 
+	sf::Clock frameRateClock;
+
 	Unit unit(&window);
 
 	while (window.isOpen())
 	{
+		float deltaTimeSec = frameRateClock.restart().asSeconds();
+
 		while (const std::optional event = window.pollEvent())
 		{
 			if (event->is<sf::Event::Closed>())
@@ -31,16 +35,9 @@ int main()
 
 		}
 
-		//sf::Vector2f playerPos = player.getPosition();
-		//playerPos.x = std::clamp(playerPos.x, 0.f, windowWidth - player.getSize().x);
-		//playerPos.y = std::clamp(playerPos.y, 0.f, windowHeight - player.getSize().y);
-		//player.setPosition(playerPos);
-
-
-
 		window.clear(sf::Color::Black);
 
-		unit.update();
+		unit.update(deltaTimeSec);
 
 		unit.draw();
 

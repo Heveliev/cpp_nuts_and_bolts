@@ -8,7 +8,7 @@ class Unit
 public:
 	Unit(sf::RenderWindow* window);
 
-	void update();
+	void update(float deltaTime);
 	void draw();
 
 
