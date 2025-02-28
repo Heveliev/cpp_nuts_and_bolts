@@ -44,3 +44,8 @@
 *.recipe
 *.ilk
 *.vs
+
+ **/x64/Debug/**/*.tlog
+ **/x64/Debug/**/*.ilk
+ **/x64/Debug/**/*.idb
+ **/x64/Debug/**/*.pdb
