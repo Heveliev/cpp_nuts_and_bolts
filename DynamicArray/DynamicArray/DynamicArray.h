@@ -193,16 +193,13 @@ void DynamicArray<T>::pop_back()
 	{
 		throw std::out_of_range("Empty array");
 	}
+
+	if (m_size <= (m_capacity / 2) && m_capacity > 1)
+	{
+		reserve(m_capacity / 2);
+	}
+
 	m_size--;
-
-	//or this but we need to create new memory to transfer values
-	//T* newData = new T[m_size];
-	//std::copy(m_data, m_data + m_size, newData);
-	//delete[] m_data;
-	//m_data = newData;
-
-	//or
-	//shrinkToFit()
 }
 
 template<class T>
