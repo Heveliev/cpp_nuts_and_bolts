@@ -7,14 +7,17 @@
  std::size_t Vector2d::m_instances = 0;
 
 
-Vector2d::Vector2d() : m_x0(0), m_y0(0), m_x1(0), m_y1(0)
+Vector2d::Vector2d() : m_x(0), m_y(0)
 {
 	m_instances++;
 }
 
-Vector2d::Vector2d(float x1, float y1) : Vector2d(0, 0, x1, y1) {}
+Vector2d::Vector2d(float x, float y) : m_x(x), m_y(y) 
+{
+	m_instances++;
+}
 
-Vector2d::Vector2d(float x0, float y0, float x1, float y1) : m_x0(x0), m_y0(y0), m_x1(x1), m_y1(y1)
+Vector2d::Vector2d(float x0, float y0, float x1, float y1) : m_x(x1 - x0), m_y(y1 - y0)
 {
 	m_instances++;
 }
@@ -29,10 +32,8 @@ Vector2d& Vector2d::operator=(const Vector2d& other)
 {
 	if (this != &other)
 	{
-		m_x0 = other.m_x0;
-		m_y0 = other.m_y0;
-		m_x1 = other.m_x1;
-		m_y1 = other.m_y1;
+		m_x = other.m_x;
+		m_y = other.m_y;
 	}
 
 	return *this;
@@ -40,13 +41,13 @@ Vector2d& Vector2d::operator=(const Vector2d& other)
 
 Vector2d Vector2d::operator+(const Vector2d& secondVector)
 {
-	return Vector2d(m_x0 + secondVector.m_x0, m_y0 + secondVector.m_y0, m_x1 + secondVector.m_x1, m_y1 + secondVector.m_y1);
+	return Vector2d(m_x + secondVector.m_x, m_y + secondVector.m_y);
 }
 
 
 Vector2d Vector2d::operator-(const Vector2d& secondVector)
 {
-	return Vector2d(m_x0 - secondVector.m_x0, m_y0 - secondVector.m_y0, m_x1 - secondVector.m_x1, m_y1 - secondVector.m_y1);
+	return Vector2d(m_x - secondVector.m_x, m_y - secondVector.m_y);
 }
 
 float& Vector2d::operator[](std::size_t idx)
@@ -56,13 +57,9 @@ float& Vector2d::operator[](std::size_t idx)
 	switch (idx)
 	{
 	case 0:
-		return m_x0;
+		return m_x;
 	case 1:
-		return m_y0;
-	case 2:
-		return m_x1;
-	case 3:
-		return m_y1;
+		return m_y;
 	default:
 		return invalid;
 	}
@@ -70,34 +67,31 @@ float& Vector2d::operator[](std::size_t idx)
 
 void Vector2d::operator*=(float scalar)
 {
-	m_x0 *= scalar;
-	m_y0 *= scalar;
-	m_x1 *= scalar;
-	m_y1 *= scalar;
+	m_x *= scalar;
+	m_y *= scalar;
 }
 
 void Vector2d::operator/=(float scalar)
 {
 	if (scalar == 0) return;
-	m_x0 /= scalar;
-	m_y0 /= scalar;
-	m_x1 /= scalar;
-	m_y1 /= scalar;
+	m_x /= scalar;
+	m_y /= scalar;
+
 }
 
 float Vector2d::operator()() const
 {
-	return std::sqrt(getX() * getX() + getY() * getY());
+	return std::sqrt(m_x * m_x + m_y * m_y);
 }
 
 float Vector2d::dotProduct(const Vector2d& other) const
 {
-	return getX() * other.getX() + getY() * other.getY();
+	return m_x * other.m_x + m_y * other.m_y;
 }
 
 Vector2d Vector2d::negate() const
 {
-	return Vector2d(m_x1, m_y1, m_x0, m_y0);
+	return Vector2d(-m_x, -m_y);
 }
 
 VectorRelativeState Vector2d::getRelativeState(const Vector2d& other) const
@@ -112,21 +106,19 @@ VectorRelativeState Vector2d::getRelativeState(const Vector2d& other) const
 
 	float dotProduct = this->dotProduct(other);
 	if (std::fabs(magnitudeThis - magnitudeOther) < EPSILON
-		&& std::fabs(getX() * other.getY() - getY() * other.getX()) < EPSILON
+		&& std::fabs(m_x * other.m_y - m_y * other.m_x) < EPSILON
 		&& dotProduct > EPSILON)
 	{
 		return VectorRelativeState::Identical;
 	}
 
 	float cos = dotProduct / (magnitudeThis * magnitudeOther);
-	cos = std::max(-1.0f, std::min(1.0f, cos));
 
-
-	if (std::fabs(cos - 1.0f) < EPSILON)
+	if (std::fabs(cos - 1.0f) <= EPSILON)
 	{
 		return VectorRelativeState::coDirected;
 	}
-	if (std::fabs(cos + 1.0f) < EPSILON)
+	if (std::fabs(cos + 1.0f) <= EPSILON)
 	{
 		return VectorRelativeState::OppositeDirected;
 	}
@@ -149,35 +141,32 @@ VectorRelativeState Vector2d::getRelativeState(const Vector2d& other) const
 
 void Vector2d::scale(float factorX, float factorY)
 {
-	m_x0 *= factorX;
-	m_y0 *= factorY;
-	m_x1 *= factorX;
-	m_y1 *= factorY;
+	m_x *= factorX;
+	m_y *= factorY;
+
 }
 
 
 
 std::ostream& operator<<(std::ostream& os, const Vector2d& vec)
 {
-	os << '{' << vec.m_x0 << ';' << ' ' << vec.m_y0 << '}' << ',' << '{' << vec.m_x1 << ';' << ' ' << vec.m_y1 << '}';
+	os << '{' << vec.m_x << ';' << ' ' << vec.m_y << '}';
 
 	return os;
 }
 
 std::istream& operator>>(std::istream& is, Vector2d& vec)
 {
-	is >> vec.m_x0 >> vec.m_y0 >> vec.m_x1 >> vec.m_y1;
+	is >> vec.m_x >> vec.m_y;
 	return is;
 }
 
 Vector2d operator+(const Vector2d& leftVector, const Vector2d& rightVector)
 {
-	return Vector2d(leftVector.m_x0 + rightVector.m_x0, leftVector.m_y0 + rightVector.m_y0,
-		leftVector.m_x1 + rightVector.m_x1, leftVector.m_y1 + rightVector.m_y1);
+	return Vector2d(leftVector.m_x + rightVector.m_x, leftVector.m_y + rightVector.m_y);
 }
 
 Vector2d operator-(const Vector2d& leftVector, const Vector2d& rightVector)
 {
-	return Vector2d(leftVector.m_x0 - rightVector.m_x0, leftVector.m_y0 - rightVector.m_y0,
-		leftVector.m_x1 - rightVector.m_x1, leftVector.m_y1 - rightVector.m_y1);
+	return Vector2d(leftVector.m_x - rightVector.m_x, leftVector.m_y- rightVector.m_y);
 }

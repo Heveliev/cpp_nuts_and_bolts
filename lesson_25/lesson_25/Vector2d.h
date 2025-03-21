@@ -25,7 +25,7 @@ public:
 	Vector2d();
 
 
-	Vector2d(float x1, float y1);
+	Vector2d(float x, float y);
 
 	Vector2d(float x0, float y0, float x1, float y1);
 
@@ -71,15 +71,12 @@ public:
 
 	friend Vector2d operator-(const Vector2d& leftVector, const Vector2d& rightVector);
 
-	float getX() const { return (m_x1 - m_x0); }
-	float getY() const { return (m_y1 - m_y0); }
-	Vector2d normalize() const;
+	float getX() const { return m_x; }
+	float getY() const { return m_y; }
 
 private:
-	float m_x0 = 0.0f;
-	float m_y0 = 0.0f;
-	float m_x1 = 0.0f;
-	float m_y1 = 0.0f;
+	float m_x = 0.0f;
+	float m_y = 0.0f;
 	static std::size_t m_instances;
 };
 

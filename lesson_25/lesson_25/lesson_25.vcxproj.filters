@@ -18,7 +18,7 @@
     <ClCompile Include="lesson_25.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vector.cpp">
+    <ClCompile Include="VectorDraw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Vector2d.cpp">
@@ -26,7 +26,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector.h">
+    <ClInclude Include="VectorDraw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Vector2d.h">

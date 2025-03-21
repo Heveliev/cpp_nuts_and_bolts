@@ -2,11 +2,11 @@
 
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Vector.h"
+#include "VectorDraw.h"
 #include "Vector2d.h"
 // DEBUG
 #include "TestVector2d.h"
-//#define DEBUG_TEST_VECTOR2D
+#define DEBUG_TEST_VECTOR2D
 // END DEBUG
 
 int main()
@@ -43,17 +43,17 @@ int main()
 	std::cout << "vec7: " << relativeStateToString(vec.getRelativeState(vec7)) << std::endl;
 
 
-	Vector vecPrt(&window, &vec);
-	Vector vecPrt2(&window, &vec2);
-	Vector vecPrt3(&window, &vec3);
-	Vector vecPrt4(&window, &vec4);
-	Vector vecPrt5(&window, &vec5);
-	Vector vecPrt6(&window, &vec6);
-	Vector vecPrt7(&window, &vec7);
+	VectorDraw vecPrt(&window, &vec);
+	VectorDraw vecPrt2(&window, &vec2);
+	VectorDraw vecPrt3(&window, &vec3);
+	VectorDraw vecPrt4(&window, &vec4);
+	VectorDraw vecPrt5(&window, &vec5);
+	VectorDraw vecPrt6(&window, &vec6);
+	VectorDraw vecPrt7(&window, &vec7);
 
-	Vector vecPrt8(&window, &vec8);
-	Vector vecPrt9(&window, &vec9);
-	Vector vecPrt10(&window, &vec10);
+	VectorDraw vecPrt8(&window, &vec8);
+	VectorDraw vecPrt9(&window, &vec9);
+	VectorDraw vecPrt10(&window, &vec10);
 
 
 

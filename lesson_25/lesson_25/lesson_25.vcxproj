@@ -136,12 +136,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="lesson_25.cpp" />
-    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="VectorDraw.cpp" />
     <ClCompile Include="Vector2d.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestVector2d.h" />
-    <ClInclude Include="Vector.h" />
+    <ClInclude Include="VectorDraw.h" />
     <ClInclude Include="Vector2d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

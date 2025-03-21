@@ -1,12 +1,12 @@
-#include "Vector.h"
+#include "VectorDraw.h"
 
 #include "Vector2d.h"
 
-int Vector::m_instances = 0;
+int VectorDraw::m_instances = 0;
 
 
 
-Vector::Vector(sf::RenderWindow* window, Vector2d* vector)
+VectorDraw::VectorDraw(sf::RenderWindow* window, Vector2d* vector)
     : m_window(window), m_vector(vector), m_font(sf::Font("roboto.ttf")), m_text(m_font)
 {
     const sf::Vector2u windowSize = m_window->getSize();
@@ -39,7 +39,7 @@ Vector::Vector(sf::RenderWindow* window, Vector2d* vector)
     m_instances++;
 }
 
-void Vector::draw()
+void VectorDraw::draw()
 {
     m_window->draw(m_line); 
     m_window->draw(m_triangle);

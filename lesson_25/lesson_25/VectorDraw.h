@@ -1,17 +1,18 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+
 class Vector2d;
 
 
 
 
 
-class Vector
+class VectorDraw
 {
 public:
-	Vector(sf::RenderWindow* window, Vector2d* vector);
-	~Vector() { delete m_window; delete m_vector; m_instances--; }
+	VectorDraw(sf::RenderWindow* window, Vector2d* vector);
+	~VectorDraw() { m_instances--; }
 
 	void draw();
 

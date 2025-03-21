@@ -35,7 +35,7 @@ inline void TestVector2d()
 	Vector2d vec1;
 	std::cout << "Init vec1(no parameters): " << std::endl;
 	std::cout << vec1 << std::endl;
-	if (vec1[0] == 0 && vec1[1] == 0 && vec1[2] == 0 && vec1[3] == 0)
+	if (vec1[0] == 0 && vec1[1] == 0)
 	{
 		std::cout << "CORECT!" << std::endl;
 		std::cout << "All parameters are equal to 0 (correct operation)" << std::endl;
@@ -51,7 +51,7 @@ inline void TestVector2d()
 	Vector2d vec2(10.f, -5.f);
 	std::cout << "Init vec2(10.f, -5.f): " << std::endl;
 	std::cout << vec2 << std::endl;
-	if (vec2[0] == 0 && vec2[1] == 0 && vec2[2] == 10.f && vec2[3] == -5.f)
+	if (vec2[0] == 10.f && vec2[1] == -5.f)
 	{
 		std::cout << "CORECT!" << std::endl;
 		std::cout << "As expected: {0;0}, {10;-5}" << std::endl;
@@ -67,10 +67,10 @@ inline void TestVector2d()
 	Vector2d vec3(3.f, -5.f, 10.f, 7.f);
 	std::cout << "Init vec3(3.f, -5.f, 10.f, 7.f): " << std::endl;
 	std::cout << vec3 << std::endl;
-	if (vec3[0] == 3.f && vec3[1] == -5.f && vec3[2] == 10.f && vec3[3] == 7.f)
+	if (vec3[0] == 7.f && vec3[1] == 12.f)
 	{
 		std::cout << "CORECT!" << std::endl;
-		std::cout << "As expected: {3;-5}, {10;7}" << std::endl;
+		std::cout << "As expected: {7;12}" << std::endl;
 	}
 	else
 	{
@@ -83,10 +83,10 @@ inline void TestVector2d()
 	Vector2d vec4 = vec3 + vec2;
 	std::cout << "vec4 = vec3 + vec2: " << std::endl;
 	std::cout << vec4 << std::endl;
-	if (vec4[0] == 3.f && vec4[1] == -5.f && vec4[2] == 20.f && vec4[3] == 2.f)
+	if (vec4[0] == 17.f && vec4[1] == 7.f )
 	{
 		std::cout << "CORECT!" << std::endl;
-		std::cout << "As expected: {3;-5}, {20;2}" << std::endl;
+		std::cout << "As expected: {17;7}" << std::endl;
 	}
 	else
 	{
@@ -99,10 +99,10 @@ inline void TestVector2d()
 	Vector2d vec5 = vec3 - vec2;
 	std::cout << "vec5 = vec3 - vec2: " << std::endl;
 	std::cout << vec5 << std::endl;
-	if (vec5[0] == 3.f && vec5[1] == -5.f && vec5[2] == 0.f && vec5[3] == 12.f)
+	if (vec5[0] == -3.f && vec5[1] == 17.f)
 	{
 		std::cout << "CORECT!" << std::endl;
-		std::cout << "As expected: {3;-5}, {0;12}" << std::endl;
+		std::cout << "As expected: {-3;17}" << std::endl;
 	}
 	else
 	{
@@ -115,10 +115,10 @@ inline void TestVector2d()
 	vec3 *= 2.f;
 	std::cout << "vec3 *= 2.f: " << std::endl;
 	std::cout << vec3 << std::endl;
-	if (vec3[0] == 6.f && vec3[1] == -10.f && vec3[2] == 20.f && vec3[3] == 14.f)
+	if (vec3[0] == 14.f && vec3[1] == 24.f)
 	{
 		std::cout << "CORECT!" << std::endl;
-		std::cout << "As expected: {6;-10}, {20;14}" << std::endl;
+		std::cout << "As expected: {14;24}" << std::endl;
 	}
 	else
 	{
@@ -169,10 +169,10 @@ inline void TestVector2d()
 	std::cout << "vec3.negate()" << std::endl;
 	std::cout << vec3 << std::endl;
 	std::cout << vec7 << std::endl;
-	if (vec7[0] == 10.f && vec7[1] == 7.f && vec7[2] == 3.f && vec7[3] == -5.f)
+	if (vec7[0] == -7.f && vec7[1] == -12.f)
 	{
 		std::cout << "CORECT!" << std::endl;
-		std::cout << "As expected: {10;7}, {3;-5}" << std::endl;
+		std::cout << "As expected: {-7;-12}" << std::endl;
 	}
 	else
 	{
@@ -300,15 +300,15 @@ inline void TestVector2d()
 	std::cout << std::endl << std::endl;
 
 	//Case 16:
-	Vector2d vec14(1.f, 1.f, 1.f, 1.f);
+	Vector2d vec14(1.f, 1.f);
 	std::cout << "vec14.scale(3,4)" << std::endl;
 	std::cout << vec14 << std::endl;
 	vec14.scale(3, 4);
 	std::cout << vec14 << std::endl;
-	if (vec13[0] == 3.f && vec14[1] == 4.f && vec14[2] == 3.f && vec14[3] == 4.f)
+	if (vec14[0] == 3.f && vec14[1] == 4.f)
 	{
 		std::cout << "CORECT!" << std::endl;
-		std::cout << "As expected: {3;4}, {3;4}" << std::endl;
+		std::cout << "As expected: {3;4}" << std::endl;
 	}
 	else
 	{
